@@ -78,6 +78,126 @@
       },
       "args": []
     },
+    "sfpowerkit:browser:disableentitlement": {
+      "id": "sfpowerkit:browser:disableentitlement",
+      "description": "commandDescription",
+      "usage": "<%= command.id %> [--human] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]",
+      "pluginName": "sfpowerkit",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "$ sfdx sfpowerkit:browser:disableentitlement -u myOrg@example.com "
+      ],
+      "flags": {
+        "json": {
+          "name": "json",
+          "type": "boolean",
+          "description": "format output as json",
+          "allowNo": false
+        },
+        "loglevel": {
+          "name": "loglevel",
+          "type": "option",
+          "description": "loglevel",
+          "required": false,
+          "helpValue": "(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)",
+          "options": [
+            "trace",
+            "debug",
+            "info",
+            "warn",
+            "error",
+            "fatal",
+            "TRACE",
+            "DEBUG",
+            "INFO",
+            "WARN",
+            "ERROR",
+            "FATAL"
+          ],
+          "default": "info"
+        },
+        "targetusername": {
+          "name": "targetusername",
+          "type": "option",
+          "char": "u",
+          "description": "username or alias for the target org; overrides default target org"
+        },
+        "apiversion": {
+          "name": "apiversion",
+          "type": "option",
+          "description": "apiversion"
+        },
+        "human": {
+          "name": "human",
+          "type": "boolean",
+          "description": "to set headless",
+          "required": false,
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "sfpowerkit:browser:removepackagemember": {
+      "id": "sfpowerkit:browser:removepackagemember",
+      "description": "commandDescription",
+      "usage": "<%= command.id %> [--human] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]",
+      "pluginName": "sfpowerkit",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "$ sfdx sfpowerkit:browser:removepackagemember -u myOrg@example.com "
+      ],
+      "flags": {
+        "json": {
+          "name": "json",
+          "type": "boolean",
+          "description": "format output as json",
+          "allowNo": false
+        },
+        "loglevel": {
+          "name": "loglevel",
+          "type": "option",
+          "description": "loglevel",
+          "required": false,
+          "helpValue": "(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)",
+          "options": [
+            "trace",
+            "debug",
+            "info",
+            "warn",
+            "error",
+            "fatal",
+            "TRACE",
+            "DEBUG",
+            "INFO",
+            "WARN",
+            "ERROR",
+            "FATAL"
+          ],
+          "default": "info"
+        },
+        "targetusername": {
+          "name": "targetusername",
+          "type": "option",
+          "char": "u",
+          "description": "username or alias for the target org; overrides default target org"
+        },
+        "apiversion": {
+          "name": "apiversion",
+          "type": "option",
+          "description": "apiversion"
+        },
+        "human": {
+          "name": "human",
+          "type": "boolean",
+          "description": "to set headless",
+          "required": false,
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
     "sfpowerkit:org:destruct": {
       "id": "sfpowerkit:org:destruct",
       "description": "This is a helper command to ease the deployment of destructiveChanges.xml. The command will create the empty package.xml and package the passed destructive manifest and deploy it to the org",

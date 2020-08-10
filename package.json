@@ -55,7 +55,8 @@
     "unzip-stream": "0.3.0",
     "unzipper": "0.10.11",
     "xml-formatter": "^2.1.2",
-    "xml2js": "^0.4.23"
+    "xml2js": "^0.4.23",
+    "puppeteer": "^5.2.1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
